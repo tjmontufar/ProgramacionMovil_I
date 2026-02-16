@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/holo_orange_light"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Constraint"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvConstraint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="HOLA CUCHURRUMI!"
+        android:textSize="16dp"
+        android:background="@android:color/holo_purple"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivPhoto"
+        app:layout_constraintTop_toTopOf="@id/ivPhoto"
+        android:layout_marginLeft="20dp"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@id/tvConstraint"
+        app:layout_constraintStart_toEndOf="@id/ivPhoto"
+        app:layout_constraintEnd_toEndOf="@id/tvConstraint"
+        app:layout_constraintTop_toBottomOf="@id/tvConstraint"
+        app:layout_constraintBottom_toBottomOf="@id/ivPhoto"
+        />
+
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="One"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivPhoto"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnOne"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="@id/btnOne"
+        app:layout_constraintEnd_toEndOf="@id/btnOne"
+        app:layout_constraintTop_toBottomOf="@id/btnTwo"
+        android:layout_marginTop="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
